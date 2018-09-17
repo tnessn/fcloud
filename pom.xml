@@ -46,5 +46,6 @@
     <modules>
     	<module>fcloud-eureka-server</module>
     	<module>fcloud-provider</module>
+    	<module>fcloud-consumer</module>
     </modules>
 </project>
