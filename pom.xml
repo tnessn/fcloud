@@ -45,5 +45,6 @@
 
     <modules>
     	<module>fcloud-eureka-server</module>
+    	<module>fcloud-provider</module>
     </modules>
 </project>
