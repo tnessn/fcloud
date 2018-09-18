@@ -10,14 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class FeignConsumerController {
+public class FeignConsumerController  {
     @Autowired
     private HelloService helloService;
 
-    @RequestMapping("/hello")
-    public String hello() {
-        return helloService.hello();
-    }
     
     
     @RequestMapping("/hello1")

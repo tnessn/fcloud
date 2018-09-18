@@ -38,6 +38,11 @@
 				<artifactId>fcloud-common</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.fcloud</groupId>
+				<artifactId>fcloud-hello-service-api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -57,5 +62,6 @@
 		<module>fcloud-turbine</module>
 		<module>fcloud-feign-consumer</module>
 		<module>fcloud-common</module>
+		<module>fcloud-hello-service-api</module>
 	</modules>
 </project>

@@ -27,7 +27,7 @@
 
 		<dependency>
 			<groupId>org.fcloud</groupId>
-			<artifactId>fcloud-common</artifactId>
+			<artifactId>fcloud-hello-service-api</artifactId>
 		</dependency>
 
 	</dependencies>
