@@ -18,7 +18,8 @@ public class HelloServiceImpl implements HelloService {
 	        return responseEntity.getBody();
 	    }
 
-	    public String error() {
+	    public String error(Throwable throwable) {
+	    	 System.out.println(throwable.getMessage());
 	        return "error";
 	    }
 }
