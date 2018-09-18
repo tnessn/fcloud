@@ -49,5 +49,6 @@
     	<module>fcloud-consumer</module>
     	<module>fcloud-hystrix-dashboard</module>
     	<module>fcloud-turbine</module>
+    	<module>fcloud-feign-consumer</module>
     </modules>
 </project>
