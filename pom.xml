@@ -47,5 +47,7 @@
     	<module>fcloud-eureka-server</module>
     	<module>fcloud-provider</module>
     	<module>fcloud-consumer</module>
+    	<module>fcloud-hystrix-dashboard</module>
+    	<module>fcloud-turbine</module>
     </modules>
 </project>
