@@ -63,5 +63,6 @@
 		<module>fcloud-feign-consumer</module>
 		<module>fcloud-common</module>
 		<module>fcloud-hello-service-api</module>
+		<module>fcloud-api-gateway</module>
 	</modules>
 </project>
