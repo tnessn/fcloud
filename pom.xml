@@ -64,5 +64,13 @@
 		<module>fcloud-common</module>
 		<module>fcloud-hello-service-api</module>
 		<module>fcloud-api-gateway</module>
+		<module>fcloud-config-server</module>
+		<module>fcloud-config-client</module>
 	</modules>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+	</dependencies>
 </project>
