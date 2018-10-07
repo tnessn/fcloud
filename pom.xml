@@ -66,6 +66,7 @@
 		<module>fcloud-api-gateway</module>
 		<module>fcloud-config-server</module>
 		<module>fcloud-config-client</module>
+		<module>fcloud-rabbitmq-hello</module>
 	</modules>
 	<dependencies>
 		
