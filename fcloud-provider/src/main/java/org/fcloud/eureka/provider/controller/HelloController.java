@@ -35,10 +35,4 @@ public class HelloController  implements HelloApi{
     public String hello(@RequestBody Book book) {
         return "书名为：" + book.getName() + ";作者为：" + book.getAuthor();
     }
-
-
-
-
-    
-    
 }
