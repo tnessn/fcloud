@@ -69,15 +69,6 @@
 	</dependencies>
 
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
 	<modules>
 		<module>fcloud-eureka-server</module>
 		<module>fcloud-provider</module>
