@@ -1,4 +1,4 @@
-package org.fcloud.feign.consumer.service;
+package org.fcloud.consumer.service;
 
 
 import org.fcloud.api.service.IHelloService;

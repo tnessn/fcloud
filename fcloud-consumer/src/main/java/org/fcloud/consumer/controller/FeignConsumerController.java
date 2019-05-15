@@ -1,10 +1,10 @@
-package org.fcloud.feign.consumer.controller;
+package org.fcloud.consumer.controller;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 import org.fcloud.api.service.dto.BookDTO;
-import org.fcloud.feign.consumer.service.HelloService;
+import org.fcloud.consumer.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -7,7 +7,7 @@
 		<artifactId>fcloud</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>fcloud-feign-consumer</artifactId>
+	<artifactId>fcloud-consumer</artifactId>
 
 
 	<dependencies>

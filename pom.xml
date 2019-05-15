@@ -66,7 +66,7 @@
 		<module>fcloud-provider</module>
 		<module>fcloud-hystrix-dashboard</module>
 		<module>fcloud-turbine</module>
-		<module>fcloud-feign-consumer</module>
+		<module>fcloud-consumer</module>
 		<module>fcloud-common</module>
 		<module>fcloud-api</module>
 		<module>fcloud-gateway</module>
