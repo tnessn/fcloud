@@ -12,7 +12,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.3.RELEASE</version>
+		<version>2.1.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -40,7 +40,7 @@
 			</dependency>
 			<dependency>
 				<groupId>org.fcloud</groupId>
-				<artifactId>fcloud-hello-service-api</artifactId>
+				<artifactId>fcloud-api</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
@@ -62,7 +62,7 @@
 		<module>fcloud-turbine</module>
 		<module>fcloud-feign-consumer</module>
 		<module>fcloud-common</module>
-		<module>fcloud-hello-service-api</module>
+		<module>fcloud-api</module>
 		<module>fcloud-gateway</module>
 		<module>fcloud-config-server</module>
 		<module>fcloud-config-client</module>

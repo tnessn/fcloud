@@ -1,4 +1,4 @@
-package org.fcloud.hello.service.api;
+package org.fcloud.api;
 
 import java.io.UnsupportedEncodingException;
 

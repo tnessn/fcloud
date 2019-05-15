@@ -31,7 +31,7 @@
 
 		<dependency>
 			<groupId>org.fcloud</groupId>
-			<artifactId>fcloud-hello-service-api</artifactId>
+			<artifactId>fcloud-api</artifactId>
 		</dependency>
 	</dependencies>
 
