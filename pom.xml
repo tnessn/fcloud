@@ -63,7 +63,7 @@
 		<module>fcloud-feign-consumer</module>
 		<module>fcloud-common</module>
 		<module>fcloud-hello-service-api</module>
-		<module>fcloud-api-gateway</module>
+		<module>fcloud-gateway</module>
 		<module>fcloud-config-server</module>
 		<module>fcloud-config-client</module>
 		<module>fcloud-rabbitmq-hello</module>

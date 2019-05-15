@@ -5,7 +5,7 @@
     <artifactId>fcloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>fcloud-api-gateway</artifactId>
+  <artifactId>fcloud-gateway</artifactId>
   
   
   

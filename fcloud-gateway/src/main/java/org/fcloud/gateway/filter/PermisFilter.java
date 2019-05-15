@@ -1,4 +1,4 @@
-package org.fcloud.api.gateway.filter;
+package org.fcloud.gateway.filter;
 
 import javax.servlet.http.HttpServletRequest;
 

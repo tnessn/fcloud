@@ -1,6 +1,6 @@
-package org.fcloud.api.gateway;
+package org.fcloud.gateway;
 
-import org.fcloud.api.gateway.filter.PermisFilter;
+import org.fcloud.gateway.filter.PermisFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;

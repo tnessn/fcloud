@@ -1,4 +1,4 @@
-package org.fcloud.api.gateway.controller;
+package org.fcloud.gateway.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
