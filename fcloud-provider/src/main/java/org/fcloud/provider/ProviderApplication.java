@@ -1,4 +1,4 @@
-package org.fcloud.eureka.provider;
+package org.fcloud.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

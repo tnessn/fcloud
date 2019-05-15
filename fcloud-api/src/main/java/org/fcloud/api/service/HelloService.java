@@ -1,9 +1,10 @@
 package org.fcloud.api.service;
 
 
-import org.fcloud.api.HelloApi;
-import org.springframework.cloud.openfeign.FeignClient;
+import org.fcloud.api.service.dto.BookDTO;
 
-@FeignClient("fcloud-provider")
-public interface HelloService extends HelloApi  {
+public interface HelloService{
+    String hello(String name);
+    BookDTO hello(String name, String author,Integer price) ;
+    String hello(BookDTO book);
 }
