@@ -1,4 +1,4 @@
-package org.fcloud.common;
+package org.fcloud.api.service.dto;
 
 public class Book {
 	private String name;

@@ -3,7 +3,7 @@ package org.fcloud.feign.consumer.controller;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import org.fcloud.common.Book;
+import org.fcloud.api.service.dto.Book;
 import org.fcloud.feign.consumer.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

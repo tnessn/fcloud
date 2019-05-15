@@ -3,8 +3,8 @@ package org.fcloud.eureka.provider.controller;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 
-import org.fcloud.api.HelloApi;
-import org.fcloud.common.Book;
+import org.fcloud.api.service.IHelloService;
+import org.fcloud.api.service.dto.Book;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController  implements HelloApi{
+public class HelloController  implements IHelloService{
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     
     @Override
