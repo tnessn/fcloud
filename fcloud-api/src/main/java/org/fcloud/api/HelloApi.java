@@ -1,4 +1,4 @@
-package org.fcloud.api.service;
+package org.fcloud.api;
 
 import java.io.UnsupportedEncodingException;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @RequestMapping("/hs2")
-public interface IHelloService {
+public interface HelloApi {
     @RequestMapping(value = "/hello1", method = RequestMethod.GET)
     String hello(@RequestParam("name") String name);
 
