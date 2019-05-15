@@ -17,12 +17,12 @@ public class HelloController  implements HelloApi{
     private final Logger LOG = LoggerFactory.getLogger(this.getClass());
     
     @Override
-    public String hello(@RequestParam String name) {
+    public String hello(String name) {
         return "hello " + name + "!";
     }
 
     @Override
-    public BookDTO hello(@RequestHeader String name, @RequestHeader String author, @RequestHeader Integer price) throws UnsupportedEncodingException {
+    public BookDTO hello(String name, String author, Integer price) throws UnsupportedEncodingException {
         BookDTO book = new BookDTO();
         book.setName(URLDecoder.decode(name,"UTF-8"));
         book.setAuthor(URLDecoder.decode(author,"UTF-8"));
@@ -32,7 +32,7 @@ public class HelloController  implements HelloApi{
     }
 
     @Override
-    public String hello(@RequestBody BookDTO book) {
+    public String hello(BookDTO book) {
         return "书名为：" + book.getName() + ";作者为：" + book.getAuthor();
     }
 }
