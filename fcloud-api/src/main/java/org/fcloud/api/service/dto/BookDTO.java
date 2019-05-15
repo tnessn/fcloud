@@ -1,6 +1,6 @@
 package org.fcloud.api.service.dto;
 
-public class Book {
+public class BookDTO {
 	private String name;
 	private String author;
 	private Integer price;

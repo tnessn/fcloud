@@ -2,7 +2,7 @@ package org.fcloud.api.service;
 
 import java.io.UnsupportedEncodingException;
 
-import org.fcloud.api.service.dto.Book;
+import org.fcloud.api.service.dto.BookDTO;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +15,8 @@ public interface IHelloService {
     String hello(@RequestParam("name") String name);
 
     @RequestMapping(value = "/hello2", method = RequestMethod.GET)
-    Book hello(@RequestHeader("name") String name, @RequestHeader("author") String author, @RequestHeader("price") Integer price) throws UnsupportedEncodingException;
+    BookDTO hello(@RequestHeader("name") String name, @RequestHeader("author") String author, @RequestHeader("price") Integer price) throws UnsupportedEncodingException;
 
     @RequestMapping(value = "/hello3", method = RequestMethod.POST)
-    String hello(@RequestBody Book book);
+    String hello(@RequestBody BookDTO book);
 }

@@ -4,7 +4,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 
 import org.fcloud.api.service.IHelloService;
-import org.fcloud.api.service.dto.Book;
+import org.fcloud.api.service.dto.BookDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,8 +22,8 @@ public class HelloController  implements IHelloService{
     }
 
     @Override
-    public Book hello(@RequestHeader String name, @RequestHeader String author, @RequestHeader Integer price) throws UnsupportedEncodingException {
-        Book book = new Book();
+    public BookDTO hello(@RequestHeader String name, @RequestHeader String author, @RequestHeader Integer price) throws UnsupportedEncodingException {
+        BookDTO book = new BookDTO();
         book.setName(URLDecoder.decode(name,"UTF-8"));
         book.setAuthor(URLDecoder.decode(author,"UTF-8"));
         book.setPrice(price);
@@ -32,7 +32,7 @@ public class HelloController  implements IHelloService{
     }
 
     @Override
-    public String hello(@RequestBody Book book) {
+    public String hello(@RequestBody BookDTO book) {
         return "书名为：" + book.getName() + ";作者为：" + book.getAuthor();
     }
 }
