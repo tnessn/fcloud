@@ -1,4 +1,4 @@
-package org.fcloud.consumer;
+package org.fcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

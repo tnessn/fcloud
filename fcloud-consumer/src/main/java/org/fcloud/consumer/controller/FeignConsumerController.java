@@ -31,9 +31,9 @@ public class FeignConsumerController  {
     @RequestMapping("/hello3")
     public String hello3() {
         BookDTO book = new BookDTO();
-        book.setName("红楼梦");
+        book.setName("xxxx");
         book.setPrice(44);
-        book.setAuthor("曹雪芹");
+        book.setAuthor("tttttt");
         return helloService.hello(book);
     }
     
