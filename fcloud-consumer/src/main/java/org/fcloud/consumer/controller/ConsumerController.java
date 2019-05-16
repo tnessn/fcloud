@@ -3,15 +3,15 @@ package org.fcloud.consumer.controller;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
+import org.apache.dubbo.config.annotation.Reference;
 import org.fcloud.api.service.HelloService;
 import org.fcloud.api.service.dto.BookDTO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class FeignConsumerController  {
-    @Autowired
+public class ConsumerController  {
+	@Reference
     private HelloService helloService;
 
     

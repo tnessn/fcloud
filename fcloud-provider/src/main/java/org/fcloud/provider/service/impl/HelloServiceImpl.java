@@ -3,11 +3,14 @@ package org.fcloud.provider.service.impl;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 
+import org.apache.dubbo.config.annotation.Service;
 import org.fcloud.api.service.HelloService;
 import org.fcloud.api.service.dto.BookDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
+@Service
 public class HelloServiceImpl  implements HelloService{
     private final Logger LOG = LoggerFactory.getLogger(this.getClass());
     
