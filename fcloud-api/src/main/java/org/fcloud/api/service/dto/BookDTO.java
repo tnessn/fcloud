@@ -1,6 +1,12 @@
 package org.fcloud.api.service.dto;
 
-public class BookDTO {
+import java.io.Serializable;
+
+public class BookDTO implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private String author;
 	private Integer price;
