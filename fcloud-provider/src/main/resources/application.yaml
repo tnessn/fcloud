@@ -28,3 +28,9 @@ spring:
         server-addr: 127.0.0.1:8848
         
 server:  port: 8789
+  
+app:
+  id: '@pom.artifactId@'
+  
+apollo:
+  meta : http://10.0.0.220:8070/

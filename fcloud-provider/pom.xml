@@ -33,7 +33,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.fcloud</groupId>
 			<artifactId>fcloud-api</artifactId>
@@ -43,7 +43,7 @@
 
 	<build>
 		<plugins>
-			 <plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<executions>
