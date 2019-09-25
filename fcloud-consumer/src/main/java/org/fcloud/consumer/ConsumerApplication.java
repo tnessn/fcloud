@@ -7,7 +7,6 @@ import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableApolloConfig // 开启Apollo客户端
 public class ConsumerApplication {
 
     public static void main(String[] args) {
