@@ -47,21 +47,6 @@
 				<artifactId>fcloud-api</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.github.tnessn</groupId>
-				<artifactId>fcloud-service-a</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.tnessn</groupId>
-				<artifactId>fcloud-service-b</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.tnessn</groupId>
-				<artifactId>fcloud-service-c</artifactId>
-				<version>${project.version}</version>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

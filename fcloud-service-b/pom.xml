@@ -37,9 +37,5 @@
 			<groupId>com.github.tnessn</groupId>
 			<artifactId>fcloud-api</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.github.tnessn</groupId>
-			<artifactId>fcloud-service-c</artifactId>
-		</dependency>
   </dependencies>
 </project>
