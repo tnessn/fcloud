@@ -22,5 +22,5 @@ public class AServiceImpl implements AService {
 	public String helloA(String name) {
 		return "(A)"+bService.helloB(name);
 	}
-
+	
 }

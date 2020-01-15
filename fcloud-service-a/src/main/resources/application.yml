@@ -9,10 +9,21 @@ spring:
         name: '@pom.artifactId@'
         
 dubbo:
+  scan:
+    base-packages: com.github.tnessn.fcloud.a.service.impl
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+    rest:
+      name: rest
+      port: 9090
+      server: netty
   registry:
-    #   The Spring Cloud Dubbo's registry extension
-    ##  the default value of dubbo-provider-services is "*", that means to subscribe all providers,
-    ##  thus it's optimized if subscriber specifies the required providers.
+#   The Spring Cloud Dubbo's registry extension
     address: spring-cloud://localhost
-#   The traditional Dubbo's registry also is supported
+#   The traditional Dubbo's registry
 #   address: zookeeper://127.0.0.1:2181
+feign:
+  hystrix:
+    enabled: true
