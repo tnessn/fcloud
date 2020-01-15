@@ -27,5 +27,19 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        		<!-- Dubbo Spring Cloud Starter -->
+		<dependency>
+			<groupId>com.alibaba.cloud</groupId>
+			<artifactId>spring-cloud-starter-dubbo</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.github.tnessn</groupId>
+			<artifactId>fcloud-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.tnessn</groupId>
+			<artifactId>fcloud-service-c</artifactId>
+		</dependency>
   </dependencies>
 </project>

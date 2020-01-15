@@ -3,11 +3,10 @@ eureka:
         serviceUrl:
             defaultZone: http://localhost:10000/eureka/
 server:
-    port: 10003
+    port: 8080
 spring:
     application:
         name: '@pom.artifactId@'
-        
         
 dubbo:
   registry:
