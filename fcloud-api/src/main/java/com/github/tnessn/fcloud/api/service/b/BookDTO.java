@@ -1,4 +1,4 @@
-package org.fcloud.api.service.dto;
+package com.github.tnessn.fcloud.api.service.b;
 
 import java.io.Serializable;
 

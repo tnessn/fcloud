@@ -1,7 +1,7 @@
-package org.fcloud.api.service;
+package com.github.tnessn.fcloud.api.service.a;
 
 
-import org.fcloud.api.service.dto.BookDTO;
+import com.github.tnessn.fcloud.api.service.b.BookDTO;
 
 public interface HelloService{
     String hello(String name);
