@@ -71,5 +71,5 @@
 		<module>fcloud-service-b</module>
 		<module>fcloud-service-c</module>
 		<module>fcloud-web</module>
-  </modules>
+	</modules>
 </project>
