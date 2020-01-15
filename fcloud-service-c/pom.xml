@@ -9,7 +9,7 @@
 		<artifactId>fcloud</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>fcloud-c</artifactId>
+	<artifactId>fcloud-service-c</artifactId>
 	<name>fcloud-c</name>
 	<url>http://maven.apache.org</url>
 	<properties>

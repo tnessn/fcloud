@@ -71,8 +71,8 @@
 		<module>fcloud-common</module>
 		<module>fcloud-api</module>
 		<module>fcloud-eureka</module>
-		<module>fcloud-a</module>
-		<module>fcloud-b</module>
-		<module>fcloud-c</module>
+		<module>fcloud-service-a</module>
+		<module>fcloud-service-b</module>
+		<module>fcloud-service-c</module>
 	</modules>
 </project>
