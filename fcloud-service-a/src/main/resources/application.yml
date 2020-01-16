@@ -10,6 +10,10 @@ spring:
     sleuth:      sampler:
         probability: 1.0 #(配置这个就可以，1.0表示100%追踪//0.7表示70%追踪)
     zipkin:      base-url: http://localhost:9441
+    cloud:
+      sentinel:
+        transport:
+          dashboard: localhost:8080
 dubbo:
   consumer:
     check: false
