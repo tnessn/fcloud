@@ -71,5 +71,6 @@
 		<module>fcloud-service-b</module>
 		<module>fcloud-service-c</module>
 		<module>fcloud-web</module>
+		<module>fcloud-zipkin-server</module>
 	</modules>
 </project>

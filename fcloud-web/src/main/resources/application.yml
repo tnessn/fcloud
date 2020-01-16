@@ -6,7 +6,9 @@ server:
     port: 8080
 spring:
     application:
-        name: '@pom.artifactId@'
+      name: '@pom.artifactId@'
+    zipkin:
+      base-url: http://localhost:9441
         
 dubbo:
   registry:
