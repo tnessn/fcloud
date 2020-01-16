@@ -18,9 +18,7 @@ spring:
           dashboard: localhost:8080
         
 dubbo:
-  provider:    filter: tracing
   consumer:
-    filter: tracing
     check: false
   registry:
     #   The Spring Cloud Dubbo's registry extension
