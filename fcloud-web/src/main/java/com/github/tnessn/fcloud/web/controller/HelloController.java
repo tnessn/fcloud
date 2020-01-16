@@ -14,7 +14,7 @@ import com.github.tnessn.fcloud.api.service.a.AService;
 /**
  * @author huangjinfeng
  */
-@Service(version = "1.0.0")
+@Service(version = "1.0.0", protocol = { "dubbo"})
 @RestController
 public class HelloController {
 	
