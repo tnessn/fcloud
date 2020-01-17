@@ -40,7 +40,6 @@
 			<artifactId>fcloud-api</artifactId>
 		</dependency>
 
-
 		<dependency>
 			<groupId>com.alibaba.cloud</groupId>
 			<artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
