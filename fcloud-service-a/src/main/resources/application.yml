@@ -15,8 +15,11 @@ spring:
         transport:
           dashboard: localhost:8080
 dubbo:
+  provider:
+    filter: tracing
   consumer:
     check: false
+    filter: tracing
   scan:
     base-packages: com.github.tnessn.fcloud.a.service.impl
   protocols:

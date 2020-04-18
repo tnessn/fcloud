@@ -15,8 +15,11 @@ spring:
         
         
 dubbo:
+  provider:
+    filter: tracing
   consumer:
     check: false
+    filter: tracing
   scan:
     base-packages: com.github.tnessn.fcloud.c.service
   protocols:
