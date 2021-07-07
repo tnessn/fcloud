@@ -5,6 +5,7 @@ package com.github.tnessn.fcloud.c.service;
 
 import org.apache.dubbo.config.annotation.DubboService;
 
+import com.github.tnessn.fcloud.api.service.c.C2Service;
 import com.github.tnessn.fcloud.api.service.c.CService;
 
 /**
@@ -15,7 +16,7 @@ public class CServiceImpl implements CService {
 
 	@Override
 	public String helloC(String name) {
-		return name+"(c)";
+		return name+"(c)"+BeanLocator.getBean(C2Service.class).toString();
 	}
 
 }
