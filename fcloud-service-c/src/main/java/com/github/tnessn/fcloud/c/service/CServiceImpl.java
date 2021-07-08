@@ -16,7 +16,7 @@ public class CServiceImpl implements CService {
 
 	@Override
 	public String helloC(String name) {
-		return name+"(c)"+BeanLocator.getBean(C2Service.class).toString();
+		return name+"(c)"+BeanLocator.getBean(C2Service.class);
 	}
 
 }
