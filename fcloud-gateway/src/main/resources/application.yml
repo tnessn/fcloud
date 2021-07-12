@@ -1,0 +1,24 @@
+eureka:
+  client:
+      serviceUrl:
+        defaultZone: http://localhost:10001/eureka/
+        instance:
+          prefer-ip-address: true
+server:
+  port: 10005
+spring:
+  application:
+    name: '@pom.artifactId@' 
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+      routes:
+      - id: fcloud-web
+        uri: lb://fcloud-web
+        predicates:
+        - Path=/fcloud-web/**
+        # 加上StripPrefix=1，否则转发到后端服务时会带上consumer前缀
+        filters:
+        - StripPrefix=1
