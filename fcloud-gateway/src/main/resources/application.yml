@@ -23,4 +23,4 @@ spring:
          # 加上StripPrefix=1，否则转发到后端服务时会带上fcloud-web前缀
         - StripPrefix=1
         # 进行token过滤
-        #- TokenAuthenticationFilter
+        - TokenAuthenticationFilter
