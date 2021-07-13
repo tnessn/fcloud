@@ -36,7 +36,7 @@ public class BeanConfig {
 			}
 			headers.add(HttpHeaders.ACCESS_CONTROL_ALLOW_CREDENTIALS, "true");
 			headers.add(HttpHeaders.ACCESS_CONTROL_EXPOSE_HEADERS, "all");
-			headers.add(HttpHeaders.ACCESS_CONTROL_MAX_AGE, "3600");
+			headers.add(HttpHeaders.ACCESS_CONTROL_MAX_AGE, "86400");
 			if (request.getMethod() == HttpMethod.OPTIONS) {
 				response.setStatusCode(HttpStatus.OK);
 				return Mono.empty();
