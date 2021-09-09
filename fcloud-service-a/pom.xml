@@ -48,6 +48,19 @@
 			<groupId>com.alibaba.csp</groupId>
 			<artifactId>sentinel-apache-dubbo-adapter</artifactId>
 		</dependency>
+		
+				<!-- swagger -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<!-- swagger -->
 
 
 		<dependency>

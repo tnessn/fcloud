@@ -1,43 +1,0 @@
-eureka:
-    client:
-        serviceUrl:
-            defaultZone: http://localhost:10001/eureka/
-    instance:
-        prefer-ip-address: true
-server:
-    port: 10003
-spring:
-   application:
-      name: '@pom.artifactId@'
-   sleuth:
-      sampler:
-        probability: 1.0 #(配置这个就可以，1.0表示100%追踪//0.7表示70%追踪)
-   zipkin:
-      base-url: http://localhost:9441   cloud:    sentinel:      transport:        dashboard: localhost:8080
-        
-        
-dubbo:
-  provider:
-    filter: tracing
-  consumer:
-    check: false
-    filter: tracing
-  scan:
-    base-packages: com.github.tnessn.fcloud.c.service
-  protocols:
-    dubbo:
-      name: dubbo
-      port: -1
-    rest:
-      name: rest
-      port: 9090
-      server: netty
-  registry:
-#   The Spring Cloud Dubbo's registry extension
-    address: spring-cloud://localhost
-#   The traditional Dubbo's registry
-#   address: zookeeper://127.0.0.1:2181
-feign:
-  hystrix:
-    enabled: true
-    
