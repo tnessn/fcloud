@@ -12,7 +12,6 @@
 	<artifactId>fcloud-b</artifactId>
 	<name>fcloud-b</name>
 	<url>http://maven.apache.org</url>
-	
 	<packaging>pom</packaging>
 	<modules>
 		<module>fcloud-b-api</module>
