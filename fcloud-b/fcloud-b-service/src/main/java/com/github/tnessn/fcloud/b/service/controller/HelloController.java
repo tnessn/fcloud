@@ -16,7 +16,7 @@ import com.github.tnessn.fcloud.a.api.AService;
 @RestController
 public class HelloController {
 	
-	@DubboReference(version = "1.0.0", protocol = "dubbo")
+	@DubboReference(version = "1.0.0")
 	private AService aService;
 	
 	@GetMapping("/hello")

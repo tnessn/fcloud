@@ -29,7 +29,7 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.github.tnessn.fcloud.a.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.github.tnessn.fcloud.a.service.controller"))
                 .paths(PathSelectors.any())
                 //不显示错误的接口地址
                 .paths(Predicates.not(PathSelectors.regex("/error.*")))//错误路径不监控

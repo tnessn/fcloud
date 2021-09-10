@@ -12,15 +12,15 @@ import com.github.tnessn.fcloud.b.api.BService;
 /**
  * @author huangjinfeng
  */
-@DubboService(version = "1.0.0", protocol = { "dubbo"})
+@DubboService(version = "1.0.0")
 public class AServiceImpl implements AService {
 	
-	@DubboReference(version = "1.0.0", protocol = "dubbo")
+	@DubboReference(version = "1.0.0")
 	private BService bService;
 
 	@Override
 	public String helloA(String name) {
-		return "(A)"+bService.helloB(name);
+		return "(A)";
 	}
 	
 }
