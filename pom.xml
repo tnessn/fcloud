@@ -77,5 +77,6 @@
 		<module>fcloud-b</module>
 		<module>fcloud-service-c</module>
 		<module>fcloud-gateway</module>
+		<module>fcloud-auth</module>
 	</modules>
 </project>
