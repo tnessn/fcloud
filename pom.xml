@@ -76,7 +76,6 @@
 		<module>fcloud-a</module>
 		<module>fcloud-b</module>
 		<module>fcloud-service-c</module>
-		<module>fcloud-zipkin-server</module>
 		<module>fcloud-gateway</module>
 	</modules>
 </project>

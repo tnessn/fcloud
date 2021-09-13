@@ -68,18 +68,6 @@
 		</dependency>
 		<!-- swagger -->
 
-
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-zipkin</artifactId>
-		</dependency>
-		<!-- zipkin支持dubbo -->
-		<dependency>
-			<groupId>io.zipkin.brave</groupId>
-			<artifactId>brave-instrumentation-dubbo</artifactId>
-			<version>5.9.2</version>
-		</dependency>
-
 	</dependencies>
 
 
