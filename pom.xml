@@ -46,11 +46,6 @@
 			</dependency>
 			<dependency>
 				<groupId>com.github.tnessn</groupId>
-				<artifactId>fcloud-a-api</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-					<dependency>
-				<groupId>com.github.tnessn</groupId>
 				<artifactId>fcloud-b-api</artifactId>
 				<version>${project.version}</version>
 			</dependency>
@@ -73,10 +68,7 @@
 	<modules>
 		<module>fcloud-common</module>
 		<module>fcloud-eureka</module>
-		<module>fcloud-a</module>
 		<module>fcloud-b</module>
-		<module>fcloud-service-c</module>
-		<module>fcloud-gateway</module>
 		<module>fcloud-auth</module>
 	</modules>
 </project>

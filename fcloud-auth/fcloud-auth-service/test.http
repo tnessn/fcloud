@@ -1,0 +1,13 @@
+###
+#获取token
+POST http://localhost:6001/oauth/token?grant_type=password&username=admin&password=123456&scope=all
+Accept: */*
+Cache-Control: no-cache
+Authorization: Basic dXNlci1jbGllbnQ6dXNlci1zZWNyZXQtODg4OA==
+
+###
+#用获取的token请求资源接口
+GET http://localhost:10002/hello
+Accept: */*
+Cache-Control: no-cache
+Authorization: bearer c5a319e2-5722-4293-bf9d-b4f38e0c3f8b
