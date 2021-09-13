@@ -3,6 +3,7 @@
 POST http://localhost:6001/oauth/token?grant_type=password&username=admin&password=123456&scope=all
 Accept: */*
 Cache-Control: no-cache
+#Basic + 空格 + base64(client-id:client-secret)
 Authorization: Basic dXNlci1jbGllbnQ6dXNlci1zZWNyZXQtODg4OA==
 
 ###
@@ -10,4 +11,14 @@ Authorization: Basic dXNlci1jbGllbnQ6dXNlci1zZWNyZXQtODg4OA==
 GET http://localhost:10002/hello
 Accept: */*
 Cache-Control: no-cache
-Authorization: bearer c5a319e2-5722-4293-bf9d-b4f38e0c3f8b
+Authorization: bearer 4a7449ec-b723-4100-9575-38356bd63492
+
+
+
+###
+#token 过期后，用 refresh_token 换取 access_token
+POST http://localhost:6001/oauth/token?grant_type=refresh_token&refresh_token=114033f1-1280-4a80-9192-babb2d0db840
+Accept: */*
+Cache-Control: no-cache
+#Basic + 空格 + base64(client-id:client-secret)
+Authorization: Basic dXNlci1jbGllbnQ6dXNlci1zZWNyZXQtODg4OA==
