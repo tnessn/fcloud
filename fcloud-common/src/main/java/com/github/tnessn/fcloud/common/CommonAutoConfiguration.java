@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * @since 30.08.2021
  */
 @Configuration
-@ComponentScan(value="com.hotcoin.common")
+@ComponentScan(value="com.github.tnessn.fcloud.common")
 public class CommonAutoConfiguration {
 
 }

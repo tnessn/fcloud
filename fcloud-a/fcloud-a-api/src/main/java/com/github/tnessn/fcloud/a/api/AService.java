@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "fcloud-a-service")
 public interface AService{
 	
-	@GetMapping(value="/a/helloA")
+	@GetMapping(value="/inner/a/helloA")
     String helloA(@RequestParam String name);
 }
