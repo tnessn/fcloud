@@ -27,8 +27,6 @@ public class FeignClientErrorDecoder implements feign.codec.ErrorDecoder {
 
     @Override
     public Exception decode(String methodKey, Response response) {
-    	LOG.error("vvvvvvvvvvvv={}",response.request().url());
-        if (/*response.status() == HttpStatus.FORBIDDEN.value() ||*/ response.status() >= 400 && response.status() <= 500) {
             String errorContent;
             try {
                 errorContent = Util.toString(response.body().asReader());
@@ -38,7 +36,5 @@ public class FeignClientErrorDecoder implements feign.codec.ErrorDecoder {
                 LOG.error(null, e);
                 return new BizException(ErrorCodeEnum.DEFAULT.getCode(), "unknown error");
             }
-        }
-        return new BizException(ErrorCodeEnum.DEFAULT.getCode(), "unknown error");
     }
 }
