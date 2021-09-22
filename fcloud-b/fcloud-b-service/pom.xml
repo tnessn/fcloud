@@ -26,11 +26,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- Dubbo Spring Cloud Starter -->
-		<dependency>
-			<groupId>com.alibaba.cloud</groupId>
-			<artifactId>spring-cloud-starter-dubbo</artifactId>
-		</dependency>
 		<dependency>
         	<groupId>org.springframework.cloud</groupId>
         	<artifactId>spring-cloud-starter-openfeign</artifactId>
@@ -49,16 +44,6 @@
 			<groupId>com.github.tnessn</groupId>
 			<artifactId>fcloud-b-api</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>com.alibaba.cloud</groupId>
-			<artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.alibaba.csp</groupId>
-			<artifactId>sentinel-apache-dubbo-adapter</artifactId>
-		</dependency>
-
 		<!-- swagger -->
 		<dependency>
 			<groupId>io.springfox</groupId>

@@ -9,7 +9,6 @@ import org.springframework.context.annotation.ImportResource;
 @EnableEurekaClient
 @SpringBootApplication
 @EnableFeignClients(basePackages = {"com.github.tnessn.fcloud.a.api"})
-@ImportResource(locations = "classpath:dubbo.xml")
 public class Application {
 
     public static void main(String[] args) {
