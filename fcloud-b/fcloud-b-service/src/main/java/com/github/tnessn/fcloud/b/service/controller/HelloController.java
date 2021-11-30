@@ -23,7 +23,6 @@ public class HelloController {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 	
-	//@DubboReference(version = "1.0.0")
 	@Autowired
 	private AService aService;
 	
