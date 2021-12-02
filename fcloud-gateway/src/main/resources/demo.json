@@ -1,0 +1,12 @@
+[
+    {
+        "resource": "fcloud-b-service",
+        "resourceMode": 0,
+        "grade": 1,
+        "count": 3,
+        "intervalSec": 1,
+        "controlBehavior": 0,
+        "burst": 1,
+        "maxQueueingTimeoutMs": 1
+    }
+]
