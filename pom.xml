@@ -79,7 +79,6 @@
 		<module>fcloud-common</module>
 		<module>fcloud-a</module>
 		<module>fcloud-b</module>
-		<module>fcloud-service-c</module>
 		<module>fcloud-gateway</module>
 	</modules>
 </project>
