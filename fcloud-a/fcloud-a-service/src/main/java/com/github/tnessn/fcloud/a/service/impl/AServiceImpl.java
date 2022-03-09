@@ -10,6 +10,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.github.tnessn.fcloud.a.api.AService;
+import com.github.tnessn.fcloud.common.enums.ErrorCodeEnum;
+import com.github.tnessn.fcloud.common.exceptions.BizException;
 import com.github.tnessn.fcloud.common.util.BeanLocator;
 
 /**
@@ -23,8 +25,7 @@ public class AServiceImpl implements AService {
 
 	@Override
 	public String helloA(String name) {
-		LOG.error("aaaaaaaaaaaa={}",BeanLocator.getBean(AService.class).hashCode());
-		return "(A)";
+		throw new BizException(ErrorCodeEnum.NOT_LOGGED_IN);
 	}
 	
 }
