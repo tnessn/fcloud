@@ -5,9 +5,13 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd        http://dubbo.apache.org/schema/dubbo        http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
 
 
-	<dubbo:reference id="aServiceProvider" interface="com.github.tnessn.fcloud.a.api.AService"
+	<dubbo:reference id="aServiceConsumer" interface="com.github.tnessn.fcloud.a.api.AService"
 				   version="1.0" group="fcloud-a-service">
 	</dubbo:reference>
+	
+	<dubbo:service id="bServiceProvider" interface="com.github.tnessn.fcloud.b.api.BService"
+				  ref="bService" version="1.0" group="fcloud-b-service">
+	</dubbo:service>
 
 	
 </beans>

@@ -25,7 +25,7 @@ public class DubboMultiLangFilter implements Filter {
 
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
-    	LOG.error("00000000000000000000000000:{}",RpcContext.getContext().isConsumerSide());
+    	LOG.error("---------->isConsumer:{}",RpcContext.getContext().isConsumerSide());
        //判断是消费者  还是 服务提供者
         if (RpcContext.getContext().isConsumerSide()) {
             RpcContext.getContext().setAttachment(I18NUtils.LANG_PARAM, MyThreadContext.getLang());
@@ -33,12 +33,6 @@ public class DubboMultiLangFilter implements Filter {
             String lang =RpcContext.getContext().getAttachment(I18NUtils.LANG_PARAM);
             MyThreadContext.setLang(lang);
         }
-        try {
             return invoker.invoke(invocation);
-        } finally {
-            if (RpcContext.getContext().isProviderSide()) {
-                MyThreadContext.unload();;
-            }
-        }
     }
 }
