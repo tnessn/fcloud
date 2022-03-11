@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.github.tnessn.fcloud.a.api.AService;
-import com.github.tnessn.fcloud.common.util.BeanLocator;
-import com.github.tnessn.fcloud.common.util.MyThreadContext;
 
 /**
  * @author huangjinfeng
@@ -29,9 +27,7 @@ public class HelloController {
 	
 	@GetMapping("/hello")
 	public String hello(@RequestParam String name) {
-		MyThreadContext.setLang(name);
 		String helloA = aService.helloA(name);
-		LOG.error("##############lang={}",MyThreadContext.getLang());
 		return helloA;
 	}
 

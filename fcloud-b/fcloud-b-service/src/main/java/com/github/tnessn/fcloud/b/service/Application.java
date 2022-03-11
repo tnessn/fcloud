@@ -2,10 +2,10 @@ package com.github.tnessn.fcloud.b.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ImportResource;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@ImportResource(locations = "classpath:dubbo.xml")
+@EnableFeignClients(basePackages = {"com.github.tnessn.fcloud.a.api"})
 public class Application {
 
     public static void main(String[] args) {

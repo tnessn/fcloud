@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.github.tnessn.fcloud.b.api.BService;
-import com.github.tnessn.fcloud.common.util.MyThreadContext;
+import com.github.tnessn.fcloud.common.util.HttpRequestUtils;
 
 /**
  * @author huangjinfeng
@@ -24,7 +24,7 @@ public class BServiceImpl implements BService {
 	@Override
 	public String helloB(String name) {
 		LOG.error("BServiceImpl.helloB  start");
-		LOG.error("##############lang={}",MyThreadContext.getLang());
+		LOG.error("vvvvvvvvvvvvv:{}",HttpRequestUtils.getHttpServletRequest().getHeader("test"));
 		LOG.error("BServiceImpl.helloB  end");
 		return "BServiceImpl.helloB";
 	}

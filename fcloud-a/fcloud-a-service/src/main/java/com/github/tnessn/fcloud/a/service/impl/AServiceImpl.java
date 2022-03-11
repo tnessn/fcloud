@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.github.tnessn.fcloud.a.api.AService;
 import com.github.tnessn.fcloud.b.api.BService;
-import com.github.tnessn.fcloud.common.util.MyThreadContext;
+import com.github.tnessn.fcloud.common.util.HttpRequestUtils;
 
 /**
  * @author huangjinfeng
@@ -29,7 +29,7 @@ public class AServiceImpl implements AService {
 	@Override
 	public String helloA(String name) {
 		LOG.error("AServiceImpl.helloA  start");
-		LOG.error("##############lang={}",MyThreadContext.getLang());
+		LOG.error("vvvvvvvvvvvvv:{}",HttpRequestUtils.getHttpServletRequest().getHeader("test"));
 		bService.helloB(name);
 		LOG.error("AServiceImpl.helloA  end");
 		return "AServiceImpl.helloA";
