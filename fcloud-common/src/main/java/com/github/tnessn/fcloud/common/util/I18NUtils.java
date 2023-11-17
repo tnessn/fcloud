@@ -6,7 +6,6 @@ import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-import java.util.Optional;
 import java.util.ResourceBundle;
 
 import javax.servlet.http.HttpServletRequest;
@@ -14,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.system.JavaVersion;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -78,7 +78,14 @@ public class I18NUtils {
 			if (config == null) {
 				ResourceBundleConfigMap.put(language, ResourceBundle.getBundle(LANGUAGE_FILE_NAME, locale));
 			}
-			msg = new MessageFormat(new String(ResourceBundleConfigMap.get(language).getString(code).getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8)).format(params).trim();
+			
+		 	  if(JavaVersion.EIGHT.equals(JavaVersion.getJavaVersion())) {
+		 		  msg = new MessageFormat(new String(ResourceBundleConfigMap.get(language).getString(code).getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8)).format(params).trim();
+		 	  }else {
+		 		  msg = new MessageFormat(new String(ResourceBundleConfigMap.get(language).getString(code).getBytes(StandardCharsets.UTF_8), StandardCharsets.UTF_8)).format(params).trim();
+		 	  }
+			
+			
 		} catch (Exception e) {
 			msg = "";
 		}
